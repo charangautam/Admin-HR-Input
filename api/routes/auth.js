@@ -20,5 +20,23 @@ router.post('/register', async (req, res) => {
     }
 })
 
+// login with a registered user
+router.post('/login', async (req, res) => {
+    try {
+        const user = await User.findOne({ username: req.body.username })
+        if(!user) {
+            res.status(400).json('An user with this username does not exist')
+        }
+
+        const validPassword = await bcrypt.compare(req.body.password, user.password)      
+        if(!validPassword) {
+            res.status(400).json('Incorrect password')
+        }
+        
+        res.status(200).json(user)
+    } catch (err) {
+        res.status(500).json(err)
+    }
+})
 
 export default router;
