@@ -2,8 +2,22 @@
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: rgb(207, 203, 203);
+}
+
+.logoutButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: tomato;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
 }
 
 .homeWrapper {
@@ -24,7 +38,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: azure;
+    background-color: #3C8DAD;
     border-radius: 20px;
     margin-top: 60px;
     padding: 20px;
@@ -43,7 +57,7 @@
 .dashboard .dashboardButton {
     width: 40%;
     border: none;
-    background-color: #126D99;
+    background-color: #FB9300;
     border-radius: 10px;
     color:white;
     font-size: 20px;

@@ -48,7 +48,7 @@
 .logoContainer .logoText {
     font-size: 50px;
     font-weight: 900;
-    color: #126D99;
+    color: ##3C8DAD;
 }
 
 .loginLeft .loginDesc {
@@ -75,7 +75,7 @@
 .loginBox .loginButton {
     height: 44px;
     border: none;
-    background-color: #126D99;
+    background-color: #3C8DAD;
     border-radius: 10px;
     color:white;
     font-size: 20px;
