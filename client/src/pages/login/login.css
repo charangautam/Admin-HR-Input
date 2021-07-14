@@ -84,3 +84,7 @@
     cursor: pointer;
     outline: none;
 }
+
+.loginButton:disabled {
+    cursor: not-allowed;
+}
