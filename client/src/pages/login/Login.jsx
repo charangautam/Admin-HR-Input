@@ -1,16 +1,18 @@
 import React from 'react'
 import './login.css'
+import logo from '../../images/logo.jpg'
 
 export default function Login() {
-    // const PF = process.env.REACT_APP_PF
-
 
     return (
         <div class='login'>
             <div className="loginWrapper">
                 <div className='loginLeft'>
-                    <h2 className='loginLogo'>Sportal</h2>
-                    <span className='loginDesc'>Sportal stems from the words sport and portal. Join the action.</span>
+                    <div className="logoContainer">
+                        <img className='logoImg' src={logo} alt="logo" />
+                        <h2 className='logoText'>Sportal</h2>
+                    </div>
+                    <span className='loginDesc'>Sportal is designed to be a vast portal for all sport enthusiasts.</span>
                 </div>
                 <div className='loginRight'>
                     <form className='loginBox'>

@@ -14,10 +14,10 @@
 .loginWrapper{
     width: 60%;
     display: flex;
+    justify-content: space-between;
     background-color: #ffffff71;
     border-radius: 10px;
     padding: 20px;
-    justify-content: space-between;
 }
 
 .loginLeft, .loginRight {
@@ -31,11 +31,24 @@
     margin-right: 40px;
 }
 
-.loginLeft .loginLogo {
+.logoContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logoContainer .logoImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.logoContainer .logoText {
     font-size: 50px;
     font-weight: 900;
     color: #126D99;
-    margin-bottom: 20px;
 }
 
 .loginLeft .loginDesc {
@@ -71,4 +84,3 @@
     cursor: pointer;
     outline: none;
 }
-
