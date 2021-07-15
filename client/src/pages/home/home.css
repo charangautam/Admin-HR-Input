@@ -5,7 +5,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(207, 203, 203);
+    background: url('../../images/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .logoutButton {
@@ -27,8 +31,10 @@
 }
 
 .homeTop .userHome {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
+    color: #D3E0EA;
+    text-decoration: underline;
 }
 
 .homeBottom .dashboard {
