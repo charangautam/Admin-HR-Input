@@ -1,10 +1,11 @@
-import express from 'express';
-import { config } from 'dotenv';
-import mongoose from 'mongoose';
+const express = require('express')
+const { config } = require('dotenv')
+const mongoose = require('mongoose')
+
 
 // routes
-import authRoutes from './routes/auth'
-import postRoutes from './routes/posts'
+const authRoutes = require('./routes/auth')
+const postRoutes = require('./routes/posts')
 
 const app = express();
 config();
@@ -23,6 +24,6 @@ app.use('/api/auth', authRoutes);
 app.use('/api/posts', postRoutes);
 
 
-app.listen(4000, () => {
+app.listen(process.env.PORT || 4000, () => {
     console.log('Backend server is running')
 })

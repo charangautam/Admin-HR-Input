@@ -1,6 +1,5 @@
-import express from 'express';
-import Post from '../models/Post';
-
+const express = require('express')
+const Post = require('../models/Post')
 
 const router = express.Router();
 
@@ -16,4 +15,14 @@ router.post('/', async (req, res) => {
     }
 })
 
-export default router
+// get posts
+router.get('/', async (req, res) => {
+    try {
+        const posts = await Post.find()
+        res.status(200).json(posts)
+    } catch (err) {
+        res.status(500).json(err)
+    }
+})
+
+module.exports = router

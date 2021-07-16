@@ -2,7 +2,6 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: url('../../images/background.jpg') no-repeat center center fixed;
@@ -12,17 +11,6 @@
     background-size: cover;
 }
 
-.logoutButton {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 10px;
-    background-color: tomato;
-    font-size: 15px;
-    border-radius: 10px;
-    cursor: pointer;
-    outline: none;
-}
 
 .homeWrapper {
     display: flex;
@@ -65,7 +53,7 @@
     border: none;
     background-color: #FB9300;
     border-radius: 10px;
-    color:white;
+    color:rgb(224, 222, 222);
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
