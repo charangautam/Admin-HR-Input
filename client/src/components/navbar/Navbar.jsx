@@ -13,10 +13,10 @@ export default function Navbar() {
 
     return (
         <div className='navbarContainer'>
-            <div className="navbarLeft">
-                <img className='logoImg' src={logo} alt="logo" />
-                <span className="logo">Sportal</span>
-            </div>
+            <Link to='/' className="navbarLeft">
+                    <img className='logoImg' src={logo} alt="logo" />
+                    <span className="logo">Sportal</span>
+            </Link>
 
             <div className="navbarCenter">
                 <Link to='/submissions' className='prevSubs'>
