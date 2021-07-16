@@ -2,27 +2,23 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    background: url('../../images/background.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-color: #D3E0EA;
 }
-
 
 .homeWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 90px;
 }
 
 .homeTop .userHome {
     font-size: 24px;
     font-weight: 600;
-    color: #D3E0EA;
+    color: black;
     text-decoration: underline;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .homeBottom .dashboard {
@@ -34,7 +30,7 @@
     align-items: center;
     background-color: #3C8DAD;
     border-radius: 20px;
-    margin-top: 60px;
+    margin-top: 90px;
     padding: 20px;
 }
 
@@ -46,6 +42,7 @@
     outline: none;
     padding-left: 12px;
     font-size: 15px;
+    margin-top: 10px;
 }
 
 .dashboard .dashboardButton {

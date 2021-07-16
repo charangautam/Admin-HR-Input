@@ -16,9 +16,9 @@ router.post('/', async (req, res) => {
 })
 
 // get posts
-router.get('/', async (req, res) => {
+router.get('/:userId', async (req, res) => {
     try {
-        const posts = await Post.find()
+        const posts = await Post.find({ userId: req.body.userId })
         res.status(200).json(posts)
     } catch (err) {
         res.status(500).json(err)

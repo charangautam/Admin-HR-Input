@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import Login from './pages/login/Login'
 import Home from './pages/home/Home'
 import Submissions from './pages/submissions/Submissions'
+import Register from './pages/register/Register'
 
 import {
   BrowserRouter as Router, 
@@ -25,6 +26,9 @@ function App() {
         </Route>
         <Route path='/submissions'>
           { user ? <Submissions /> : <Login />}
+        </Route>
+        <Route to='/register'>
+          <Register />
         </Route>
       </Switch>
     </Router>

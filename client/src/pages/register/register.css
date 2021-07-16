@@ -1,33 +1,33 @@
-.login {
+.register {
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('../../images/hero1.jpg') no-repeat center center fixed;
+    background: url('../../images/hero2.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-.loginWrapper{
+.registerWrapper{
     width: 60%;
     display: flex;
     justify-content: space-between;
-    background-color: #ffffff71;
+    background-color: #0e0d0d71;
     border-radius: 10px;
     padding: 20px;
 }
 
-.loginLeft, .loginRight {
+.registerLeft, .registerRight {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.loginLeft {
+.registerLeft {
     margin-right: 40px;
 }
 
@@ -51,19 +51,20 @@
     color: #3C8DAD;
 }
 
-.loginLeft .loginDesc {
+.registerLeft .registerDesc {
     font-size: 24px;
     font-weight: 500;
+    color: white;
 }
 
-.loginRight .loginBox {
-    height: 240px;
+.registerRight .registerBox {
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.loginBox .loginInput {
+.registerBox .registerInput {
     height: 44px;
     border: 2px solid gray;
     border-radius: 10px;
@@ -72,12 +73,12 @@
     font-size: 15px;
 }
 
-.loginBox .loginButton {
+.registerBox .registerButton {
     height: 44px;
     border: none;
     background-color: #3C8DAD;
     border-radius: 10px;
-    color:black;
+    color:white;
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 3px;
@@ -85,6 +86,6 @@
     outline: none;
 }
 
-.loginButton:disabled {
+.registerButton:disabled {
     cursor: not-allowed;
 }

@@ -1,6 +1,6 @@
 import React, { useContext, useRef } from 'react'
-import axios from 'axios'
 import './login.css'
+import axios from 'axios'
 import logo from '../../images/logo.jpg'
 import { CircularProgress } from '@material-ui/core'
 import { AuthContext } from '../../contextAPI/AuthContext'
@@ -8,7 +8,7 @@ import { AuthContext } from '../../contextAPI/AuthContext'
 
 export default function Login() {
     const username = useRef()
-    const password = useRef()
+    const password = useRef() 
     const { user, isFetching, dispatch } = useContext(AuthContext)
 
     const loginCall = async (userCreds, dispatch) => {

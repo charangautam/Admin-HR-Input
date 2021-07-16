@@ -55,7 +55,12 @@ export default function Submissions() {
                         return <Post id={p._id} post={p} />
                     })}
                 </div>
-                <button className ='downloadButton' onClick={exportFile}>Download</button>
+                { posts.length && 
+                    <button className ='downloadButton' onClick={exportFile}>
+                        Download 
+                    </button>
+                }
+                
             </div>
         </>
     )
