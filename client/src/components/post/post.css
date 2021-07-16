@@ -1,0 +1,27 @@
+
+.postContainer {
+    background-color: azure;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.postItem {
+    display: flex;
+    margin-bottom: 7px;
+}
+
+.postItem .label {
+    margin-right: 6px;
+}
+
+.downloadButton {
+    margin-top: 10px;
+    background-color: orange;
+    padding: 6px;
+    width: 70%;
+    font-size: 14px;
+    align-self: center;
+    border-radius: 10px;
+}

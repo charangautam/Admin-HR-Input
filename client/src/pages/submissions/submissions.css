@@ -1,0 +1,19 @@
+.submissions {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.submissions .title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.eachPost {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}

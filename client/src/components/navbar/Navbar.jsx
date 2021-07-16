@@ -1,7 +1,7 @@
 import React from 'react'
 import './navbar.css'
 import { Link } from 'react-router-dom'
-import logo from '../images/logo.jpg'
+import logo from '../../images/logo.jpg'
 
 
 export default function Navbar() {
@@ -19,7 +19,7 @@ export default function Navbar() {
             </div>
 
             <div className="navbarCenter">
-                <Link className='prevSubs'>
+                <Link to='/submissions' className='prevSubs'>
                    Previous Submissions
                 </Link>
             </div>

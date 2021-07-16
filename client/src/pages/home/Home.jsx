@@ -2,7 +2,7 @@ import React, { useContext, useRef } from 'react'
 import './home.css'
 import { AuthContext } from '../../contextAPI/AuthContext'
 import axios from 'axios'
-import Navbar from '../../components/Navbar'
+import Navbar from '../../components/navbar/Navbar'
 
 
 export default function Home() {
