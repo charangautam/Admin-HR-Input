@@ -5,6 +5,7 @@ import axios from 'axios'
 import Navbar from '../../components/navbar/Navbar'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import BackupIcon from '@material-ui/icons/Backup';
 
 
 export default function Home() {
@@ -86,7 +87,7 @@ export default function Home() {
                                 required
                                 ref={profession}
                             />
-                            <button className='dashboardButton' type='submit'>Submit</button>
+                            <button className='dashboardButton' type='submit'>Submit <BackupIcon className='submitIcon' /></button>
                         </form>
                     </div>
                 </div>

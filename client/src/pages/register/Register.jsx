@@ -16,6 +16,7 @@ export default function Register() {
 
     const [isFetching, setIsFetching] = useState(false)
     const [error, setError] = useState(false)
+    const [usernameError, setUsernameError] = useState(false)
 
 
     const handleSubmit = async (e) => {
@@ -23,6 +24,7 @@ export default function Register() {
         e.preventDefault()
         if(repeatPassword.current.value !== password.current.value) {
             setError(true)
+            setUsernameError(false)
             setIsFetching(false)
         } else {
             setError(false)
@@ -32,7 +34,13 @@ export default function Register() {
                 password: password.current.value
             }            
             try {
-                await axios.post('/auth/register', user)
+                const res = await axios.post('/auth/register', user)
+                if(res.data === "User already exists"){
+                    setUsernameError(true)
+                    setError(false)
+                    setIsFetching(false)
+                    return
+                }
                 history.push('/login')
             } catch (err) {
                 console.log(err)
@@ -88,6 +96,9 @@ export default function Register() {
 
                         { error && 
                             <h4 className='errorMessage'>Passwords don't match, please try again!</h4>    
+                        }   
+                        { usernameError && 
+                            <h4 className='errorMessage'>Username already exists, pick another one!</h4>    
                         }   
                     </form>
                 </div>

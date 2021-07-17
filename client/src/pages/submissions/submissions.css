@@ -23,7 +23,7 @@
 
 .downloadButton {
     flex: 3;
-    width: 40%;
+    width: 30%;
     margin-top: 100px;
     background-color: #3C8DAD;
     padding: 10px;
@@ -32,6 +32,13 @@
     align-self: center;
     font-size: larger;
     color: #D3E0EA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.downloadIcon {
+    margin-left: 7px;
 }
 
 .noPosts {

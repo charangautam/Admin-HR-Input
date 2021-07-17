@@ -5,6 +5,7 @@ import axios from 'axios'
 import dayjs from 'dayjs'
 import Navbar from '../../components/navbar/Navbar'
 import Post from '../../components/post/Post'
+import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 
 export default function Submissions() {
     const { user } = useContext(AuthContext)
@@ -59,7 +60,7 @@ export default function Submissions() {
                 </div>
                 { !!posts.length ?
                     <button className ='downloadButton' onClick={exportFile}>
-                        Download 
+                        Download <CloudDownloadIcon className='downloadIcon'/>
                     </button> 
                     : <h4 className='noPosts'>No submissions have been made</h4>
                 }

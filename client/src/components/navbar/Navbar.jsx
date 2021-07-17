@@ -2,6 +2,8 @@ import React from 'react'
 import './navbar.css'
 import { Link, useHistory } from 'react-router-dom'
 import logo from '../../images/logo.jpg'
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import CloudDoneIcon from '@material-ui/icons/CloudDone';
 
 
 export default function Navbar() {
@@ -22,12 +24,12 @@ export default function Navbar() {
 
             <div className="navbarCenter">
                 <Link to='/submissions' className='prevSubs'>
-                   Previous Submissions
+                   Previous Submissions <CloudDoneIcon className='prevSubsIcon'/>
                 </Link>
             </div>
 
             <div className="navbarRight">
-                <button className='logoutButton' onClick={handleClick}>Log out </button>
+                <button className='logoutButton' onClick={handleClick}>Logout <ExitToAppIcon className='logoutIcon'/></button>
             </div>
         </div>
     )
