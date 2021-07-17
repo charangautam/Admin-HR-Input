@@ -33,3 +33,8 @@
     font-size: larger;
     color: #D3E0EA;
 }
+
+.noPosts {
+    align-self: center;
+    font-size: larger;
+}

@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 
 
 export default function Login() {
-    const { isFetching, dispatch } = useContext(AuthContext)
+    const { error, isFetching, dispatch } = useContext(AuthContext)
     const username = useRef()
     const password = useRef() 
 
@@ -60,6 +60,7 @@ export default function Login() {
                         <button className='loginButton' type='submit' disabled={isFetching}>
                             {isFetching ? <CircularProgress size='20px'/> : 'LOGIN'}
                         </button>
+                        { error ? <h4 className='errorMessage'>Incorrect username or password, please try again!</h4> : null}
                     </form>
                 </div>
             </div>

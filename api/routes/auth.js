@@ -25,11 +25,13 @@ router.post('/login', async (req, res) => {
         const user = await User.findOne({ username: req.body.username })
         if(!user) {
             res.status(400).json('An user with this username does not exist')
+            return
         }
 
         const validPassword = await bcrypt.compare(req.body.password, user.password)      
         if(!validPassword) {
             res.status(400).json('Incorrect password')
+            return
         }
 
         const { password, ...others } = user._doc

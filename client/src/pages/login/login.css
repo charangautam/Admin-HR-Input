@@ -115,3 +115,9 @@
     font-size: 15px;
     cursor: pointer;
 }
+
+.errorMessage {
+    font-size: 17px;
+    color: #DA0037;
+    align-self: center;
+}

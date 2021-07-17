@@ -57,12 +57,12 @@ export default function Submissions() {
                         return <Post id={p._id} post={p} />
                     })}
                 </div>
-                { posts.length && 
+                { !!posts.length ?
                     <button className ='downloadButton' onClick={exportFile}>
                         Download 
-                    </button>
+                    </button> 
+                    : <h4 className='noPosts'>No submissions have been made</h4>
                 }
-                
             </div>
         </>
     )

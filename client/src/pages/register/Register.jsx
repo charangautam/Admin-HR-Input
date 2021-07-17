@@ -15,14 +15,17 @@ export default function Register() {
     const history = useHistory()
 
     const [isFetching, setIsFetching] = useState(false)
+    const [error, setError] = useState(false)
 
 
     const handleSubmit = async (e) => {
         setIsFetching(true)
         e.preventDefault()
         if(repeatPassword.current.value !== password.current.value) {
-            password.current.setCustomValidity("Passwords don't match!")
+            setError(true)
+            setIsFetching(false)
         } else {
+            setError(false)
             const user = {
                 email: email.current.value,
                 username: username.current.value,
@@ -82,6 +85,10 @@ export default function Register() {
                         <button className='registerButton' type='submit' disabled={isFetching}> 
                             {isFetching ? <CircularProgress size='20px'/> : 'REGISTER'}
                         </button>
+
+                        { error && 
+                            <h4 className='errorMessage'>Passwords don't match, please try again!</h4>    
+                        }   
                     </form>
                 </div>
             </div>

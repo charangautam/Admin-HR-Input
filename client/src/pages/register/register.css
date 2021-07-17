@@ -117,3 +117,9 @@
     font-size: 15px;
     color: white;
 }
+
+.errorMessage {
+    font-size: 17px;
+    color: #DA0037;
+    align-self: center;
+}
