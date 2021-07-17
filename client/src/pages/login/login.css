@@ -2,6 +2,7 @@
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: url('../../images/hero1.jpg') no-repeat center center fixed;
@@ -87,4 +88,30 @@
 
 .loginButton:disabled {
     cursor: not-allowed;
+}
+
+.registerLink {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff71;
+    margin-top: 60px;
+    padding: 27px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.registerLink .registerLinkText {
+    font-size: 20px;
+    font-weight: 500;
+    color: black
+}
+
+.registerLink .registerLinkButton {
+    background-color: #FB9300;
+    padding: 7px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
 }

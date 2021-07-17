@@ -1,13 +1,15 @@
 import React from 'react'
 import './navbar.css'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import logo from '../../images/logo.jpg'
 
 
 export default function Navbar() {
+    const history = useHistory()
     
     const handleClick = (e) => {
         localStorage.clear()
+        history.push('/')
         window.location.reload()
     }
 

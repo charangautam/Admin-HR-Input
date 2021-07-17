@@ -1,15 +1,16 @@
 import React, { useContext, useRef } from 'react'
 import './login.css'
+import { AuthContext } from '../../contextAPI/AuthContext'
 import axios from 'axios'
 import logo from '../../images/logo.jpg'
 import { CircularProgress } from '@material-ui/core'
-import { AuthContext } from '../../contextAPI/AuthContext'
+import { Link } from 'react-router-dom'
 
 
 export default function Login() {
+    const { isFetching, dispatch } = useContext(AuthContext)
     const username = useRef()
     const password = useRef() 
-    const { user, isFetching, dispatch } = useContext(AuthContext)
 
     const loginCall = async (userCreds, dispatch) => {
         dispatch({ type: 'LOGIN_START' })
@@ -27,7 +28,6 @@ export default function Login() {
             { username: username.current.value, password: password.current.value }, 
             dispatch
         )
-        console.log(user)
     }
 
     return (
@@ -63,6 +63,10 @@ export default function Login() {
                     </form>
                 </div>
             </div>
+            <Link to='/register' className='registerLink'>
+                <span className='registerLinkText'>Don't have an account?</span>
+                <button className='registerLinkButton'>Register</button>
+            </Link>
         </div>
     )
 }

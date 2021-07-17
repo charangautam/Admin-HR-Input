@@ -15,6 +15,7 @@ export default function Home() {
 
     const handleSubmit = async (e) => {
         const post = {
+            userId: user._id,
             firstName: firstName.current.value,
             lastName: lastName.current.value,
             UID: UID.current.value,

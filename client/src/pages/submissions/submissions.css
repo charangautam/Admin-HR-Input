@@ -1,11 +1,8 @@
 .submissions {
-    height: calc(100vh - 60px);
-    width: 100vw;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #BBBFCA;
 }
 
 .submissions .title {

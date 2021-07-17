@@ -4,6 +4,7 @@ import axios from 'axios'
 import logo from '../../images/logo.jpg'
 import { CircularProgress } from '@material-ui/core'
 import { useHistory } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 export default function Register() {
@@ -84,6 +85,10 @@ export default function Register() {
                     </form>
                 </div>
             </div>
+            <Link to='/login' className='loginLink'>
+                <span className='loginLinkText'>Already have an account?</span>
+                <button className='loginLinkButton'>Login</button>
+            </Link>
         </div>
     )
 }

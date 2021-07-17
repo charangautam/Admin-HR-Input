@@ -1,24 +1,26 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './submissions.css'
+import { AuthContext } from '../../contextAPI/AuthContext'
 import axios from 'axios'
 import dayjs from 'dayjs'
 import Navbar from '../../components/navbar/Navbar'
 import Post from '../../components/post/Post'
 
 export default function Submissions() {
+    const { user } = useContext(AuthContext)
     const [posts, setPosts] = useState([])
 
     useEffect(() => {
         const fetchPosts = async () => {
             try {
-                const res = await axios.get('/posts')
+                const res = await axios.get('/posts/' + user._id)
                 setPosts(res.data)
             } catch (err) {
                 console.log(err)
             }
         }
         fetchPosts()
-    }, [posts])
+    }, [user._id])
 
     const csvString = [
         [
