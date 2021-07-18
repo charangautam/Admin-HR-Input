@@ -1,0 +1,81 @@
+.lander {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: url('../../images/lander.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.landerWrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.landerWrapper .logoContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.landerWrapper .logoContainer .logoImg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.landerWrapper .logoContainer .logoText {
+    font-size: 60px;
+    font-weight: 900;
+    color: #3C8DAD;
+}
+
+.landerList {
+    margin-top: 40px;
+}
+
+.landerDesc {
+    color: white;
+    font-size: 21px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.landerBottom {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.landerBottom .joinDesc {
+    color: #3C8DAD;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: center;
+    align-self: center;
+}
+
+.landerBottom .joinButtons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.joinButtons .loginButton, .joinButtons .registerButton {
+    padding: 10px;
+    background-color:#FB9300;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;
+}

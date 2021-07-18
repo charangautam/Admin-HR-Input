@@ -1,11 +1,37 @@
 import React from 'react'
 import './lander.css'
+import logo from '../../images/logo.jpg'
+import { Link } from 'react-router-dom'
 
 export default function Lander() {
     return (
         <div className='lander'>
             <div className="landerWrapper">
-                
+                <div className="landerTop">
+                    <div className='logoContainer'>
+                        <img className='logoImg' src={logo} alt="logo" />
+                        <h2 className='logoText'>Sportal</h2>
+                    </div>
+                    <ul className='landerList'>
+                        <li className='landerDesc'>
+                            We offer you a personilized portal of news and highlights from your favorite sports, teams and players. 
+                        </li>
+                        <li className='landerDesc'>
+                            Interact with other characters from all over the world and enjoy the value sports brings to all of us!
+                        </li>
+                    </ul>
+                </div>
+                <div className="landerBottom">
+                <div className='joinButtons'>
+                        <Link to='/login'>
+                            <button className='loginButton'>Login</button>
+                        </Link>
+                        <Link to='/register'>
+                            <button className='registerButton'>Register</button>
+                        </Link>
+                    </div>
+                    <span className='joinDesc'>Join Sportal now and reap the benefits of our global community.</span>
+                </div>
             </div>
         </div>
     )
