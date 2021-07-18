@@ -30,6 +30,8 @@
     align-items: center;
     background-color: #3C8DAD;
     border-radius: 20px;
+    border: 6px solid #D3E0EA;
+    border-style: groove;
     margin-top: 90px;
     padding: 20px;
 }
@@ -60,6 +62,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px solid #FB9300;
+    border-style: groove;
 }
 
 .submitIcon {

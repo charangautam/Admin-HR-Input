@@ -39,6 +39,7 @@
 
 .landerList {
     margin-top: 40px;
+    list-style-type: circle;
 }
 
 .landerDesc {
@@ -78,4 +79,6 @@
     letter-spacing: 1px;
     cursor: pointer;
     outline: none;
+    border: 4px solid #FB9300;
+    border-style: groove;
 }

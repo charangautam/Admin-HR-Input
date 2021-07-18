@@ -16,7 +16,7 @@
     width: 60%;
     display: flex;
     justify-content: space-between;
-    background-color: #ffffff71;
+    background-color: #ffffffa9;
     border-radius: 10px;
     padding: 20px;
 }
@@ -84,6 +84,8 @@
     letter-spacing: 3px;
     cursor: pointer;
     outline: none;
+    border: 4px solid #3C8DAD;
+    border-style: groove;
 }
 
 .loginButton:disabled {
@@ -94,7 +96,7 @@
     text-decoration: none;
     display: flex;
     align-items: center;
-    background-color: #ffffff71;
+    background-color: #ffffffa9;
     margin-top: 60px;
     padding: 27px;
     border-radius: 10px;

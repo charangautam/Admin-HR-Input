@@ -1,5 +1,5 @@
 .navbarContainer {
-    height: 60px;
+    height: 66px;
     width: 100%;
     display: flex;
     background-color: #F9E2CF;
@@ -43,6 +43,8 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+    border: 4px solid #FB9300;
+    border-style: groove;
 }
 
 .prevSubs .prevSubsIcon {
