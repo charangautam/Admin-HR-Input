@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './lander.css'
 import logo from '../../images/logo.jpg'
 import { Link } from 'react-router-dom'
 
 export default function Lander() {
+
     return (
         <div className='lander'>
             <div className="landerWrapper">
@@ -34,5 +35,6 @@ export default function Lander() {
                 </div>
             </div>
         </div>
+
     )
 }
