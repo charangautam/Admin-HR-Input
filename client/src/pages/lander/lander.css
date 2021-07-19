@@ -82,3 +82,9 @@
     border: 4px solid #FB9300;
     border-style: groove;
 }
+
+@media screen and (max-width: 600px) {
+    .landerDesc {
+        font-size: 19px;
+    }
+}

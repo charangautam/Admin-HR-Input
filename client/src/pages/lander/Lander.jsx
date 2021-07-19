@@ -14,10 +14,10 @@ export default function Lander() {
                     </div>
                     <ul className='landerList'>
                         <li className='landerDesc'>
-                            Sportal offers you a personilized portal of news and highlights from your favorite sports, teams and players. 
+                            Sportal offers you a personilized portal of news and highlights from your favorite sport teams and players. 
                         </li>
                         <li className='landerDesc'>
-                            Interact with other users from all over the world and enjoy the value sports brings to all of us!
+                            Interact with other users from all over the world and share the value that sports brings to all of us!
                         </li>
                     </ul>
                 </div>
@@ -30,7 +30,7 @@ export default function Lander() {
                             <button className='registerButton'>Register</button>
                         </Link>
                     </div>
-                    <span className='joinDesc'>Join us and enjoy the benefits of our global community.</span>
+                    <span className='joinDesc'>Join us to enjoy the benefits of our global community.</span>
                 </div>
             </div>
         </div>

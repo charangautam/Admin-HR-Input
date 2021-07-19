@@ -123,3 +123,27 @@
     color: #DA0037;
     align-self: center;
 }
+
+@media screen and (max-width: 800px) {
+    .logoContainer .logoText {
+        font-size: 46px;
+    }
+    .loginLeft .loginDesc {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .logoContainer .logoText {
+        font-size: 32px;
+    }
+    .loginLeft .loginDesc {
+        font-size: 17px;
+    }
+    .registerLink .registerLinkText {
+        font-size: 17px;
+    }
+    .errorMessage {
+        font-size: 15px;
+    }
+}
