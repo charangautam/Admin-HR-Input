@@ -1,8 +1,12 @@
+.postWrapper {
+    display: flex;
+    margin-bottom: 20px;
+}
 
 .postContainer {
     background-color: azure;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
     flex-direction: column;
 }
 
@@ -13,5 +17,11 @@
 
 .postItem .label {
     margin-right: 6px;
+}
+
+.deletePostButton {
+    background-color: #f36363a9;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
 }
 

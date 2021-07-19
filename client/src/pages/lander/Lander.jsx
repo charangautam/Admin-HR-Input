@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './lander.css'
 import logo from '../../images/logo.jpg'
 import { Link } from 'react-router-dom'

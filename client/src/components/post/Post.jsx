@@ -1,9 +1,19 @@
 import React from 'react'
 import './post.css'
 import dayjs from 'dayjs'
+import axios from 'axios'
 
 export default function Post({ post }) {
     const date = dayjs(post.entryDate).format('DD/MM/YYYY')
+
+    const handleClick = () => {
+        try {
+            axios.delete('/posts/' + post._id)
+        } catch (err) {
+            console.log(err)
+        }
+        window.location.reload()
+    }
 
     return (
         <> 
@@ -31,6 +41,7 @@ export default function Post({ post }) {
                             <span>{post.profession}</span>
                         </div>
                     </div>
+                    <button className='deletePostButton' onClick={handleClick}>X</button>
                 </div>
             </div>
         </>
