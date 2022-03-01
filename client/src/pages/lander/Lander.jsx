@@ -15,10 +15,10 @@ export default function Lander() {
                     </div>
                     <ul className='landerList'>
                         <li className='landerDesc'>
-                            Sportal offers you a personilized portal of news and highlights from your favorite sport teams and players. 
+                            Admin HR Input that allows users to input an athlete's data
                         </li>
                         <li className='landerDesc'>
-                            Interact with other users from all over the world and share the value that sports brings to all of us!
+                            Users are then able to download all inputted data in a csv file
                         </li>
                     </ul>
                 </div>
